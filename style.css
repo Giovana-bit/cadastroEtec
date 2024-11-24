@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Container principal */
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100vh;
+    background-color: #b1b1b1;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o restante do conteúdo */
+    width: 100%; /* Ocupa toda a largura do espaço */
+}
+
+.logo {
+    max-width: 80%; /* Reduz proporcionalmente para caber no layout */
+    max-height: 200px; /* Limita a altura para não ocupar muito espaço */
+    height: auto; /* Mantém a proporção da imagem */
+    width: auto; /* Mantém a proporção horizontal */
+}
+/* Texto da coluna esquerda */
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    padding: 20px;
+    background-color: #b1b1b1;
+
+}
+
+.cadastro h2 {
+    margin-bottom: 10px;
+}
+
+.password {
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* Formulário */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.formulario .form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form input, .form select {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding-left: 40px; /* Espaço para o ícone */
+    background-color: #ecf0f1;
+    font-size: 14px;
+}
+
+.label-input {
+    position: relative; /* Para posicionar os ícones */
+    width: 100%;
+}
+
+.icon-modify {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d;
+}
+
+/* Botões */
+.button-group {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 50px; /* Espaçamento entre os botões */
+    width: 100%;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    font-size: 14px; /* Fonte ajustada */
+    padding: 10px 20px; /* Ajuste do espaçamento interno */
+    cursor: pointer;
+    font-weight: bold;
+    width: auto; /* Largura automática */
+    min-width: 100px; /* Define um tamanho mínimo para consistência */
+    border: none;
+}
+
+/* Botão Criar */
+.btn-second {
+    background-color: #B30100;
+    border: 1px solid #530303;
+    transition: background-color 0.5s;
+}
+
+.btn-second:hover {
+    background-color: #fff;
+    color: #530303;
+}
+
+/* Botão Entrar */
+.btn-primary {
+    background-color: #3C4B57;
+    border: 1px solid #1c2226;
+    transition: background-color 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #1c2226;
+}
